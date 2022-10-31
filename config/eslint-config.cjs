@@ -15,7 +15,7 @@ exports.rules = {
     'no-unreachable': 'warn', // 禁止出现[return|throw]之后的代码块
     'no-else-return': 'warn', // 禁止if语句中return语句之后有else块
     'no-empty-function': 'warn', // 禁止出现空的函数块
-    'no-lone-blocks': 'warn', // 禁用不必要的嵌套块
+    // 'no-lone-blocks': 'warn', // 禁用不必要的嵌套块
     'no-multi-spaces': 'warn', // 禁止使用多个空格
     'no-redeclare': 'warn', // 禁止多次声明同一变量
     'no-return-assign': 'warn', // 禁止在return语句中使用赋值语句
@@ -63,8 +63,11 @@ exports.rules = {
         'ignores': []
     }],
     // 取消关闭标签不能自闭合的限制设置
-    'vue/html-self-closing': ['error', {
-        'html': {
+    'vue/html-self-closing': [
+        'error', 
+        {
+        'html': 
+        {
             'void': 'always',
             'normal': 'never',
             'component': 'always'
