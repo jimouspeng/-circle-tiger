@@ -2,7 +2,7 @@
  * @Author: jimouspeng
  * @Date: 2022-10-28 16:38:21
  * @Description:
- * @FilePath: \circle-tiger\src\components\HelloWorld.vue
+ * @FilePath: \circle-tiger\src\components\hello-world\index.vue
 -->
 <script setup lang="tsx">
 import { ref } from 'vue'
@@ -10,6 +10,12 @@ import { ref } from 'vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+</script>
+
+<script lang="tsx">
+export default {
+    name: 'HelloWorld',
+}
 </script>
 
 <template>

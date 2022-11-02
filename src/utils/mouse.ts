@@ -1,8 +1,8 @@
 /*
  * @Author: jimouspeng
  * @Date: 2022-10-31 16:24:43
- * @Description:
- * @FilePath: \circle-tiger\src\utils.js\mouse.ts
+ * @Description: Vue3-组合式函数
+ * @FilePath: \circle-tiger\src\utils\mouse.ts
  */
 import { ref, onMounted, onUnmounted } from 'vue'
 

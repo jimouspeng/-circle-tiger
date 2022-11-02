@@ -7,11 +7,17 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import CircleTiger from '../publish-dist/index.umd.cjs'
+import '../publish-dist/style.css'
 
 /* eslint-disable */
 console.log('====================================')
-console.log(import.meta.env.VITE_NAME)
+console.log(import.meta.env.VITE_NAME, CircleTiger())
 console.log('====================================')
 /* eslint-enable  */
 
-createApp(App).mount('#app')
+const Application = createApp(App)
+
+// Application.use(HelloWorld)
+
+Application.mount('#app')
